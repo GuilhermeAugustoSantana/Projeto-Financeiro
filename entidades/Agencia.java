@@ -4,71 +4,68 @@ import java.util.ArrayList;
 
 public class Agencia {
    private ArrayList<Conta> contas = new ArrayList<>();
-   private Banco banco;
+   private Banco banco; 
    private int id;
    private String numero;
-   private String cidade;
-   public static int contadorAgencias = 0;
+   private String cidade; 
+   public static int contadorAgencias = 0; 
 
-   // construtor vazio
    public Agencia() {
    }
 
-   // construtor personalizado
    public Agencia(Banco banco, int id, String numero, String cidade) {
-      this.banco = banco;
-      this.cidade = cidade;
-      this.id = id;
-      this.numero = numero;
+       this.banco = banco;
+       this.id = id;
+       this.numero = numero;
+       this.cidade = cidade;
    }
 
    public ArrayList<Conta> getContas() {
-      return contas;
+       return contas;
    }
 
    public void setContas(ArrayList<Conta> contas) {
-      this.contas = contas;
+       this.contas = contas;
    }
 
    public Banco getBanco() {
-      return banco;
+       return banco;
    }
 
    public void setBanco(Banco banco) {
-      this.banco = banco;
+       this.banco = banco;
    }
 
    public int getId() {
-      return id;
+       return id;
    }
 
    public void setId(int id) {
-      this.id = id;
+       this.id = id;
    }
 
    public String getNumero() {
-      return numero;
+       return numero;
    }
 
    public void setNumero(String numero) {
-      this.numero = numero;
+       this.numero = numero;
    }
 
    public String getCidade() {
-      return cidade;
+       return cidade;
    }
 
    public void setCidade(String cidade) {
-      this.cidade = cidade;
+       this.cidade = cidade;
    }
 
    public static int getContadorAgencias() {
-      return contadorAgencias;
+       return contadorAgencias;
    }
 
    public static void setContadorAgencias(int contadorAgencias) {
-      Agencia.contadorAgencias = contadorAgencias;
-   }
-
+       Agencia.contadorAgencias = contadorAgencias;
+   }       
    
 }
